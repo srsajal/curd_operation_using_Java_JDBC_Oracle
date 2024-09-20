@@ -49,7 +49,7 @@ class jdbc1 {
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
             // step2 create the connection object
-            Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "srsajal531");
+            Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "abc"); // Username and password in oracle
             // step3 create the statement object
             Statement stmt = con.createStatement();
 
@@ -72,7 +72,7 @@ class jdbc1 {
         Scanner sr = new Scanner(System.in);
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "srsajal531");
+            Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "abc"); // Username and password in oracle
             System.out.print("Enter roll no : ");
             roll = sr.nextInt();
             sr.nextLine();
@@ -100,8 +100,7 @@ class jdbc1 {
         Scanner sr = new Scanner(System.in);
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            Connection con = DriverManager.getConnection(
-                    "jdbc:oracle:thin:@localhost:1521:xe", "system", "srsajal531");
+            Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "abc"); // Username and password in oracle
             System.out.print("Enter the roll no you want to delete : ");
             roll = sr.nextInt();
             String deleteQuery = "DELETE FROM student where roll_no = ?";
@@ -124,7 +123,7 @@ class jdbc1 {
         Scanner sr = new Scanner(System.in);
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "srsajal531");
+            Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "abc"); // Username and password in oracle
             System.out.print("Enter roll where you want to update : ");
             roll = sr.nextInt();
             sr.nextLine();
@@ -152,7 +151,7 @@ class jdbc1 {
         Scanner sr = new Scanner(System.in);
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "srsajal531");
+            Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "abc"); // Username and password in oracle
             System.out.print("Enter roll number you want to see : ");
             roll = sr.nextInt();
             String getByIdQuery = "select * from student where roll_no = ?";
@@ -176,7 +175,7 @@ class jdbc1 {
         Scanner sr = new Scanner(System.in);
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "srsajal531");
+            Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "abc"); // Username and password in oracle
             System.out.print("Enter what you want to search : ");
             s = sr.nextLine();
             String searchQuery = "select * from student where TO_CHAR(roll_no) = ? or UPPER(name) like UPPER(?) or UPPER(dept) like UPPER(?) ";
