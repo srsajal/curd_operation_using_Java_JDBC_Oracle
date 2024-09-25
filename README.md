@@ -51,7 +51,7 @@ Connection connection = DriverManager.getConnection(url, username, password);
 ## Step 4: Add Oracle JDBC Driver
 
 ### 1. Download the Oracle JDBC Driver
-Download the `ojdbc8.jar` from [Oracle's official website](https://www.oracle.com/database/technologies/appdev/jdbc-ucp-191-downloads.html).
+Download the `ojdbc8.jar` from [Oracle's official website]([https://www.oracle.com/database/technologies/appdev/jdbc-ucp-191-downloads.html](https://www.oracle.com/in/database/technologies/appdev/jdbc-downloads.html)).
 
 ### 2. Add the .jar file to your project's classpath
 
